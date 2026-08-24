@@ -12,8 +12,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, roc_curve, auc
 from PIL import Image
-from nltk.tokenize import wordpunct_tokenize
-import matplotlib.pyplot as plt
+#from nltk.tokenize import wordpunct_tokenize
+#import matplotlib.pyplot as plt
 
 
 # AT Global level
