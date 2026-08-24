@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import re
-import nltk #natural language toolkit
+import nltk
 import ssl
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -122,17 +122,17 @@ def page2():
 
     # 1. Original Text and Class
     st.markdown("### 1. Original Text and Class")
-    st.dataframe(df[["Text", "Class"]],width='stretch')
+    st.dataframe(df[["Text", "Class"]],width=800)
 
     # 2. Cleaned Text
     st.markdown("### 2. Cleaned Text")
-    st.dataframe(df_clean[["Text", "Class"]],width='stretch')
+    st.dataframe(df_clean[["Text", "Class"]],width=800)
 
     # 3. Tokenisation
     st.markdown("### 3. Tokenisation")
     st.write("Each Text observation is tokenised separately.")
     st.dataframe(
-        df_clean[["Text", "Class", "Tokens"]],width='stretch')
+        df_clean[["Text", "Class", "Tokens"]],width=800)
 
     # 4. Stopwords
     #st.markdown("### 4. Stopwords")
@@ -141,12 +141,12 @@ def page2():
 
     # 5. Stopword Removal
     st.markdown("### 5. Stopword Removal")
-    st.dataframe(df_clean[["Text", "Class", "Filtered Text"]], width='stretch')
+    st.dataframe(df_clean[["Text", "Class", "Filtered Text"]], width=800)
 
     # 6. Final Preprocessed Text
     st.markdown(
         "### 6. Final Preprocessed Text")
-    st.dataframe(df_clean[["Preprocessed Text", "Class"]],width='stretch')
+    st.dataframe(df_clean[["Preprocessed Text", "Class"]],width=800)
 
 # PAGE 3 — SENTIMENT ANALYSIS
 
