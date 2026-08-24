@@ -27,7 +27,8 @@ st.set_page_config(page_title="Sentiment Analysis", page_icon="📈", layout="wi
 ssl._create_default_https_context = ssl._create_unverified_context
 
 # Download required NLTK packages
-nltk.download("punkt", quiet=True)
+nltk.download('punkt_tab')
+nltk.download('punkt')
 nltk.download("stopwords", quiet=True)
 
 # Load Dataset
